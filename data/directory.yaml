@@ -7727,3 +7727,33 @@
   - 'GitHub repository search via the API: the witness multiplayer, witness coop, the witness randomizer, TheWitnessExplorer, witness64_d3d11 (no co-op project), 2026-10-22'
   - 'WebSearch (extended): The Witness Jonathan Blow multiplayer co-op mod; also randomizer / Archipelago client and engine queries (no co-op mod), 2026-10-22'
   - 'Not checked: Nexus Mods, ModDB, Reddit, archive.org, Steam guides in depth, the game or speedrun Discords, non-English communities'
+- game: MOTORSLICE
+  year: 2026
+  engine: Unreal Engine 5.7
+  project: MotorSliceCoop
+  url: https://github.com/SubmitCodes/motorslice-coop
+  other_urls: []
+  kind: mod
+  status: prototype
+  coop_scope:
+    players_visible: yes
+    story: partial
+    enemies: partial
+    world_state: partial
+    items: partial
+  players: "2"
+  networking: steam-relay
+  open_source: yes
+  last_activity: 2026-10
+  qa: automated
+  notes: >-
+    Build-from-zero RE-UE4SS (UE 5.7) Lua mod plus a Python relay (UDP and Steam Spacewar AppID 480
+    via the game's bundled Steamv161 steam_api64.dll flat C API). Automated two-client test
+    (test-relay.ps1 + mutation twin) verifies bidirectional player puppet placement (P_Mesh +
+    single-node animations), megastructure checkpoint/sublevel streaming sync (LevelID), and door
+    open sync (Door2Normal_C); Steam Spacewar lobby creation and entry verified by test-steam-smoke.ps1.
+    Write-up in games/motorslice.
+  sources:
+  - https://github.com/SubmitCodes/motorslice-coop
+  - https://store.steampowered.com/app/2830030/MOTORSLICE/
+  checked: '2026-10-22'
